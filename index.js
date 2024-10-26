@@ -12,7 +12,7 @@ client.on('messageCreate', message => {
     const urls = message.content.match(urlRegex);
 
     if (urls) {
-        const targetChannel = message.guild.channels.cache.find(channel => channel.name === 'target-channel');
+        const targetChannel = message.guild.channels.cache.find(channel => channel.name === '1101910971116687411/1101910971116687414');
         if (targetChannel) {
             targetChannel.send(`URL detected: ${urls.join(', ')}`);
             message.edit(message.content.replace(urlRegex, ''));
